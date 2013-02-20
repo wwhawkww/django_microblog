@@ -2,7 +2,6 @@ from django.contrib import admin
 
 from djangor.models import Entry
 
-
 class EntryAdmin(admin.ModelAdmin):
     list_display = ('pub_date', 'title', 'author', )
     list_display_links = ('pub_date', 'title', )
