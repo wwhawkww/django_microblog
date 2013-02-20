@@ -9,7 +9,7 @@
       <div id="header">
         <ul id="control-bar">
           {% if user.is_authenticated %}
-          <li>Logged in as {{user.username}} | </li>
+          <li>Logged in as: {{user.username}} | </li>
            {% if user.is_staff or request.user.is_superuser %}
             <li><a href="{% url admin:index %}">Admin</a></li>
            {% endif %}
