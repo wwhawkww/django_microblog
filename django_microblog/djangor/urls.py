@@ -25,4 +25,8 @@ urlpatterns = patterns('',
             success_url="/",
         ),
         name="add_entry"),
+    url(r'^success/$',ListView.as_view( queryset=Entry.objects.all(),
+            context_object_name="entries",
+            template_name="registration/registration_complete.html",),
+            name = "register_success"),
 )
