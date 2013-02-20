@@ -1,10 +1,11 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import patterns, url,include
 from django.views.generic import ListView
 
 
 from djangor.models import Entry
 from djangor.forms import EntryForm
 from djangor.views import AddEntryView
+from registration.views import register
 
 
 urlpatterns = patterns('',
